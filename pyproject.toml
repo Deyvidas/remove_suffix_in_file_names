@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "rename-files"
+name = "remove_suffix_in_file_names"
 version = "0.1.0"
-description = ""
+description = "Simple script that replaces regex [?].* with an empty string for all files found recursively in the passed root directory."
 authors = ["Deyvidas <devidbanyavichyus@yandex.ru>"]
 readme = "README.md"
 

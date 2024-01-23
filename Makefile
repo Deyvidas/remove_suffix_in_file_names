@@ -37,12 +37,14 @@ mypy_check:	## Make mypy checking.
 		--check-untyped-defs \
 		${ROOT_DIR}
 
-formating:	## Run make commands autoflake -> isort -> black -> mypy_check.
+formatting:	## Run make commands autoflake -> isort -> black -> mypy_check.
 	make autoflake
 	echo
 	make isort
 	echo
 	make black
+	echo
+	make mypy_check
 
 dependencies:	## Run script gen_requirements.sh that generate {type}_requirements.txt
 	sh ${ROOT_DIR}/gen_requirements.sh
